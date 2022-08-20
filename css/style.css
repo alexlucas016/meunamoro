@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root {
+    --primary: white;
+    --secundary: red;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+body{
+    background-color: #15161b;
+}
+
+.logo h2 {
+    font-size: 2.2rem;
+    color: var(--primary);
+}
+
+.logo span {
+    color: var(--secundary);
+}
+
+/*-------Conteudo um--------*/
+
+.img1 img {
+    width: 300px;
+    height: auto;
+    border-radius: 22px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+    margin-top: 20px;
+}
+
+.conteudo-um {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 100px;
+}
+
+.area-title h3 {
+    color: var(--primary);
+    font-weight: normal;
+}
+
+.area-title h1 {
+    color: var(--primary);
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.area-title button {
+    display: inline-block;
+    background-color: var(--secundary);
+    padding: 15px 60px;
+    color: var(--primary);
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.area-title button:hover{
+    color: var(--secundary);
+    background-color: transparent;
+    border: 1px solid var(--secundary);
+}
+
+/* Area cards*/
+
+.area-cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 400px;
+}
+
+.area-cards h2 {
+    color: var(--primary);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.card {
+    background: #2C2F37;
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 150px;
+    margin-left: 25px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    border-radius: 6px;
+}
+
+.card:hover {
+    background-color: var(--secundary);
+}
+
+/* Conteudo dois */
+
+.conteudo-dois {
+    background-color: var(--secundary);
+    height: 342px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    align-items: center;
+    gap: 100px;
+}
+
+.img2 img {
+    width: 280px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.area-title-2 h1 {
+    color: var(--primary);
+    font-size: 35px;
+}
+
+.area-title-2 h3 {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.area-title-2 button {
+    display: inline-block;
+    background-color: var(--primary);
+    padding: 15px 60px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 6px;
+}
+
+.area-title-2 button:hover{
+    color: var(--secundary);
+    background-color: black;
+}
+
+/* Form */
+
+.area-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-form h2 {
+    color: var(--primary);
+    font-size: 19px;
+    text-align: center;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+}
+
+
+.formulario input {
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+input::placeholder{
+    color: #2C2F37;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+input[type="submit"] {
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: var(--secundary);
+    color: var(--primary);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    height: 55px;
+}
+
+input[type="submit"]:hover{
+    color: var(--secundary);
+    background-color: transparent;
+    border: 1px solid var(--secundary);
+}
+
+
+/* Social */
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    margin-bottom: 20px;
+    gap: 12px;
+}
+
+
+.icons {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*------Footer-------- */
+
+.logo-heart {
+    width: 8%;
+  }
+  
+#footer {
+    color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.heart-tech {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
